@@ -178,21 +178,21 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GLFW_TRUE);
 
-    // Rotate the image Left wise 90 degrees using W key
-    if (key == GLFW_KEY_Q && action == GLFW_PRESS)
+    // Rotate the image Left wise 90 degrees using L key
+    if (key == GLFW_KEY_L && action == GLFW_PRESS)
     	rotation += 90*pi/180;
 
-    // Rotate the image Right wise 90 degrees using E key
-    if (key == GLFW_KEY_E && action == GLFW_PRESS)
+    // Rotate the image Right wise 90 degrees using R key
+    if (key == GLFW_KEY_R && action == GLFW_PRESS)
     	rotation -= 90*pi/180;
 
-    // Zoom into the image using =	key
-    if (key == GLFW_KEY_EQUAL && action == GLFW_PRESS)//
+    // Zoom into the image using 1 key
+    if (key == GLFW_KEY_1 && action == GLFW_PRESS)//
 
     	scale *= 2;
 
-    // Zoom out of the image using - key
-    if (key == GLFW_KEY_MINUS && action == GLFW_PRESS)
+    // Zoom out of the image using 2 key
+    if (key == GLFW_KEY_2 && action == GLFW_PRESS)
     	scale *= .5;
 
     // Translate the image down using down arrow
@@ -211,20 +211,20 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     if (key == GLFW_KEY_RIGHT && action == GLFW_PRESS)
     	translate_x -= .1;
 
-    // Shear image upward using W key
-    if (key == GLFW_KEY_W && action == GLFW_PRESS) //Shear Up
+    // Shear image upward using 3 key
+    if (key == GLFW_KEY_3 && action == GLFW_PRESS) //Shear Up
     	shear_y += .1;
 
-    // Shear image downward using S key
-    if (key == GLFW_KEY_S && action == GLFW_PRESS) //Shear Down
+    // Shear image downward using 4 key
+    if (key == GLFW_KEY_4 && action == GLFW_PRESS) //Shear Down
     	shear_y -= .1;
 
-    // Shear image right using D key
-    if (key == GLFW_KEY_D && action == GLFW_PRESS) //Shear Right
+    // Shear image right using 5 key
+    if (key == GLFW_KEY_5 && action == GLFW_PRESS) //Shear Right
     	shear_x += .1;
 
-    // Shear image left using A key
-    if (key == GLFW_KEY_A && action == GLFW_PRESS) //Shear Left
+    // Shear image left using 6 key
+    if (key == GLFW_KEY_6 && action == GLFW_PRESS) //Shear Left
     	shear_x -= .1;
 }
 
